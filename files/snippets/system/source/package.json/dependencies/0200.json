@@ -1,0 +1,11 @@
+
+        "@fortawesome/fontawesome-free": "^6.1.2",
+        "autoprefixer": "10.4.5",
+        "icheck-bootstrap": "^3.0.1",
+        "vform": "^1.0.1",
+        "vue-i18n": "^8.17.4",
+        "vue-progressbar": "^0.7.5",
+        "vue-router": "^3.1.6",
+        "jquery-ui": "^1.12.1",
+        "laravel-vue-pagination": "^2.3.1",
+        "vue-sweetalert2": "^3.0.6"

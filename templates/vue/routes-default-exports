@@ -1,0 +1,3 @@
+    "/{{$ __value__/__lowercase_text__}}": {{$ __value__}}List,
+    "/{{$ __value__/__lowercase_text__}}/detail/:id": {{$ __value__}}Detail,
+    "/{{$ __value__/__lowercase_text__}}/edit/:id": {{$ __value__}}Edit,

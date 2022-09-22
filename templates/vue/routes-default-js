@@ -1,0 +1,49 @@
+import HomePage from "./components/pages/default/Home.vue";
+import ProfileDetail from "./components/pages/default/profile/detail.vue";
+import ProfileChangePassword from "./components/pages/default/profile/changepassword.vue";
+import ProfileConfiguration from "./components/pages/default/profile/configuration.vue";
+import Configuration from "./components/pages/default/Configuration.vue";
+import ParameterSettings from "./components/pages/default/ParameterSettings.vue";
+import ServerInformationPage from "./components/pages/default/ServerInformation.vue";
+import MenuConfigurationPage from "./components/pages/default/MenuConfiguration.vue";
+import WisiloModelDisplayTextPage from "./components/pages/default/WisiloModelDisplayText.vue";
+import WisiloUserList from "./components/pages/default/wisilouser/list.vue";
+import WisiloUserEdit from "./components/pages/default/wisilouser/edit.vue";
+import WisiloUserConfiguration from "./components/pages/default/wisilouser/configuration.vue";
+import WisiloUserGroupList from "./components/pages/default/wisilousergroup/list.vue";
+import WisiloUserGroupEdit from "./components/pages/default/wisilousergroup/edit.vue";
+import WisiloUserGroupLayout from "./components/pages/default/wisilousergroup/layout.vue";
+import WisiloUserParameterSettings from "./components/pages/default/wisilousergroup/parametersettings.vue";
+import WisiloUserGroupConfiguration from "./components/pages/default/wisilousergroup/configuration.vue";
+import Administration from "./components/pages/default/Administration.vue";
+import WisiloLogs from "./components/pages/default/WisiloLogs.vue";
+import WisiloMedia from "./components/pages/default/WisiloMedia.vue";
+{{ROUTES_MODEL_DEFAULT_IMPORT_DEFINITONS}}
+/* {{@snippet:import_files}} */
+
+export default {
+    "/": HomePage,
+    "/home": HomePage,
+    "/profile/detail": ProfileDetail,
+    "/profile/changepassword": ProfileChangePassword,
+    "/profile/configuration": ProfileConfiguration,
+    "/configuration": Configuration,
+    "/parameter_settings": ParameterSettings,
+    "/server_information": ServerInformationPage,
+    "/menu_configuration": MenuConfigurationPage,
+    "/wisilomodeldisplaytext": WisiloModelDisplayTextPage,
+    "/wisilouser": WisiloUserList,
+    "/wisilouser/detail/:current_id": WisiloUserConfiguration,
+    "/wisilouser/edit/:id": WisiloUserEdit,
+    "/wisilouser/configuration/:current_id": WisiloUserConfiguration,
+    "/wisilousergroup": WisiloUserGroupList,
+    "/wisilousergroup/detail/:current_id": WisiloUserGroupConfiguration,
+    "/wisilousergroup/edit/:id": WisiloUserGroupEdit,
+    "/wisilousergroup/layout/:id": WisiloUserGroupLayout,
+    "/wisilousergroup/parametersettings/:owner_group": WisiloUserParameterSettings,
+    "/administration": Administration,
+    "/wisilologs": WisiloLogs,
+    "/wisilo_media": WisiloMedia,
+{{ROUTES_MODEL_DEFAULT_EXPORT_DEFINITONS}}
+/* {{@snippet:export_files}} */
+};
